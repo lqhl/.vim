@@ -31,9 +31,10 @@ NeoBundle 'tpope/vim-commentary'
 NeoBundle 'vim-scripts/bufexplorer.zip'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'vim-scripts/YankRing.vim'
-NeoBundle 'fholgado/minibufexpl.vim'
+" NeoBundle 'fholgado/minibufexpl.vim'
 " NeoBundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 NeoBundle 'Lokaltog/vim-powerline'
+NeoBundle 'Valloric/YouCompleteMe'
 
 call neobundle#end()
 
