@@ -49,3 +49,6 @@ function! g:ToggleColorColumn()
 endfunction
 nnoremap <silent> <leader>h :call g:ToggleColorColumn()<CR>
 highlight ColorColumn ctermbg=blue guibg=blue
+
+" set C/C++ indent options
+set cino=g0,t0
