@@ -26,7 +26,6 @@ NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'Shougo/vimproc.vim', {'build': {'unix': g:make}}
-NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-commentary'
 NeoBundle 'vim-scripts/bufexplorer.zip'
 NeoBundle 'scrooloose/nerdtree'
