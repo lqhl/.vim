@@ -34,6 +34,7 @@ NeoBundle 'vim-scripts/YankRing.vim'
 " NeoBundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'Valloric/YouCompleteMe'
+NeoBundle 'derekwyatt/vim-scala'
 
 call neobundle#end()
 
