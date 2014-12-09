@@ -22,7 +22,7 @@ NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'flazz/vim-colorschemes'
+" NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'Shougo/vimproc.vim', {'build': {'unix': g:make}}
@@ -30,11 +30,11 @@ NeoBundle 'tpope/vim-commentary'
 NeoBundle 'vim-scripts/bufexplorer.zip'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'vim-scripts/YankRing.vim'
-" NeoBundle 'fholgado/minibufexpl.vim'
-" NeoBundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-NeoBundle 'Lokaltog/vim-powerline'
+" remember to add `export TERM="xterm-256color"` in .zshrc or .bashrc
+NeoBundle 'bling/vim-airline'
 NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'derekwyatt/vim-scala'
+NeoBundle 'altercation/vim-colors-solarized'
 
 call neobundle#end()
 

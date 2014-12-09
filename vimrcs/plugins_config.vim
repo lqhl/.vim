@@ -43,3 +43,5 @@ map <leader>nf :NERDTreeFind<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Don't confirm before execute `.ycm_extra_conf.py`
 let g:ycm_confirm_extra_conf = 0
+
+let g:airline_powerline_fonts = 1
