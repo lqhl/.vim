@@ -35,6 +35,7 @@ NeoBundle 'bling/vim-airline'
 NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'godlygeek/tabular'
 
 call neobundle#end()
 
