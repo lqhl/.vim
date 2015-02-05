@@ -45,3 +45,9 @@ map <leader>nf :NERDTreeFind<cr>
 let g:ycm_confirm_extra_conf = 0
 
 let g:airline_powerline_fonts = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-commentary
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Config for MATLAB
+autocmd FileType matlab set commentstring=\%\ %s
