@@ -51,3 +51,8 @@ let g:airline_powerline_fonts = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Config for MATLAB
 autocmd FileType matlab set commentstring=\%\ %s
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Tabular
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <leader>t :Tabularize /\s\+\zs<cr>
