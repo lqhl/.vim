@@ -52,3 +52,6 @@ highlight ColorColumn ctermbg=blue guibg=blue
 
 " set C/C++ indent options
 set cino=g0,t0
+
+" highlight current line
+set cursorline
