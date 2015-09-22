@@ -25,7 +25,15 @@ NeoBundle 'kien/ctrlp.vim'
 " NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'mileszs/ack.vim'
-NeoBundle 'Shougo/vimproc.vim', {'build': {'unix': g:make}}
+NeoBundle 'Shougo/vimproc.vim', {
+\ 'build' : {
+\     'windows' : 'tools\\update-dll-mingw',
+\     'cygwin' : 'make -f make_cygwin.mak',
+\     'mac' : 'make -f make_mac.mak',
+\     'linux' : 'make',
+\     'unix' : 'gmake',
+\    },
+\ }
 NeoBundle 'tpope/vim-commentary'
 NeoBundle 'vim-scripts/bufexplorer.zip'
 NeoBundle 'scrooloose/nerdtree'
@@ -36,6 +44,8 @@ NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'godlygeek/tabular'
+NeoBundle 'salsifis/vim-transpose'
+NeoBundle 'morhetz/gruvbox'
 
 call neobundle#end()
 

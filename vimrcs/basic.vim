@@ -114,11 +114,7 @@ set foldcolumn=1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable syntax highlighting
 syntax enable 
-if has('gui_running')
-    set background=light
-else
-    set background=dark
-endif
+set background=dark
 
 try
     colorscheme solarized
