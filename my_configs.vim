@@ -55,3 +55,6 @@ set cino=g0,t0
 
 " highlight current line
 set cursorline
+
+" set the filetype of .tex file as tex
+let g:tex_flavor='latex'
