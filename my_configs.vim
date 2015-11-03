@@ -1,5 +1,3 @@
-colorscheme solarized
-
 " tags
 set tags=./tags;/
 

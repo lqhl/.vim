@@ -116,11 +116,6 @@ set foldcolumn=1
 syntax enable 
 set background=dark
 
-try
-    colorscheme solarized
-catch
-endtry
-
 " Set extra options when running in GUI mode
 if has("gui_running")
     set guioptions-=T
