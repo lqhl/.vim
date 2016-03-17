@@ -63,6 +63,7 @@ map <leader>t :Tabularize /\s\+\zs<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Solarized
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set background=dark
 if !has('gui_running')
     " Compatibility for Terminal
     let g:solarized_termtrans=1
