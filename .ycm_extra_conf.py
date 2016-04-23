@@ -63,6 +63,8 @@ flags = [
 '.',
 '-I',
 './ClangCompleter',
+'-I',
+'/usr/lib/gcc/x86_64-linux-gnu/5/include',
 '-isystem',
 './tests/gmock/gtest',
 '-isystem',
