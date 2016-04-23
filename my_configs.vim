@@ -54,7 +54,7 @@ set cino=g0,t0
 " highlight current line
 set cursorline
 
-" set the filetype of .tex file as tex
+" set the filetype of .tex file as latex
 let g:tex_flavor='latex'
 
 " break Chinese words
