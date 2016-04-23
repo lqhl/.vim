@@ -16,6 +16,9 @@ if has("win16") || has("win32")
 else
     let g:yankring_history_dir = '~/.vim/temp_dirs/'
 endif
+" disable for neovim
+" ref: https://github.com/neovim/neovim/issues/3097#issuecomment-168317907
+let g:yankring_clipboard_monitor = (has("nvim") ? 0 : 1)
 
 
 """"""""""""""""""""""""""""""
