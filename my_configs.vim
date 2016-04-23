@@ -59,3 +59,7 @@ let g:tex_flavor='latex'
 
 " break Chinese words
 set formatoptions+=mM
+
+" add clang-format support
+map <leader>k :pyf /usr/share/vim/addons/syntax/clang-format-3.6.py<cr>
+imap <C-K> <c-o>:pyf /usr/share/vim/addons/syntax/clang-format-3.6.py<cr>
