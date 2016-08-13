@@ -54,6 +54,7 @@ NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'salsifis/vim-transpose'
 NeoBundle 'morhetz/gruvbox'
+NeoBundle 'rust-lang/rust.vim'
 
 call neobundle#end()
 
