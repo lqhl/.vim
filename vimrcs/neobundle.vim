@@ -50,11 +50,14 @@ NeoBundle 'vim-scripts/YankRing.vim'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'derekwyatt/vim-scala'
-NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'salsifis/vim-transpose'
-NeoBundle 'morhetz/gruvbox'
 NeoBundle 'rust-lang/rust.vim'
+
+" color schemes
+NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'morhetz/gruvbox'
+NeoBundle 'romainl/flattened'
 
 call neobundle#end()
 
