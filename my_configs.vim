@@ -61,5 +61,15 @@ let g:tex_flavor='latex'
 set formatoptions+=mM
 
 " add clang-format support
-map <leader>k :pyf /usr/share/vim/addons/syntax/clang-format-3.6.py<cr>
-imap <C-K> <c-o>:pyf /usr/share/vim/addons/syntax/clang-format-3.6.py<cr>
+if has('unix')
+  if has('mac')       " osx
+    map <leader>k :pyf /usr/local/Cellar/clang-format/2016-06-27/share/clang/clang-format.py<cr>
+    imap <C-K> <c-o>:pyf /usr/local/Cellar/clang-format/2016-06-27/share/clang/clang-format.py<cr>
+  else                " linux, bsd, etc
+    map <leader>k :pyf /usr/share/vim/addons/syntax/clang-format-3.8.py<cr>
+    imap <C-K> <c-o>:pyf /usr/share/vim/addons/syntax/clang-format-3.8.py<cr>
+  endif
+endif
+
+" treat normal text as markdown
+au BufNewFile,BufRead jrnl*.txt set filetype=markdown
