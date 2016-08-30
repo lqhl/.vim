@@ -26,8 +26,8 @@ endif
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " My Bundles here:
-NeoBundle 'Shougo/neosnippet.vim'
-NeoBundle 'Shougo/neosnippet-snippets'
+" NeoBundle 'Shougo/neosnippet.vim'
+" NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kien/ctrlp.vim'
 " NeoBundle 'flazz/vim-colorschemes'
@@ -51,6 +51,7 @@ NeoBundle 'bling/vim-airline'
 NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'godlygeek/tabular'
+NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'salsifis/vim-transpose'
 NeoBundle 'rust-lang/rust.vim'
 
