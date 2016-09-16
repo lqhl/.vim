@@ -72,12 +72,4 @@ colorscheme gruvbox
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Markdown
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Disable the folding configuration
-let g:vim_markdown_folding_disabled = 1
-let g:vim_markdown_math = 1
-let g:vim_markdown_new_list_item_indent = 4
-autocmd BufRead,BufNewFile *.md,*.txt,*.asciidoc,README,TODO,CHANGELOG,NOTES,ABOUT
-        \ setlocal autoindent expandtab tabstop=4 softtabstop=4 shiftwidth=4
-        \ wrap formatoptions=tcqn
-        \ formatlistpat=^\\s*\\d\\+\\.\\s\\+\\\\|^\\s*<\\d\\+>\\s\\+\\\\|^\\s*[a-zA-Z.]\\.\\s\\+\\\\|^\\s*[ivxIVX]\\+\\.\\s\\+
-        \ comments=s1:/*,ex:*/,://,b:#,:%,:XCOMM,fb:-,fb:*,fb:+,fb:.,fb:>
+au BufNewFile,BufRead jrnl*.txt,*.md,*.txt,*.asciidoc,README,TODO,CHANGELOG,NOTES,ABOUT set filetype=markdown

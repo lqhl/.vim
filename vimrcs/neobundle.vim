@@ -51,7 +51,7 @@ NeoBundle 'bling/vim-airline'
 NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'godlygeek/tabular'
-NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'gabrielelana/vim-markdown'
 NeoBundle 'salsifis/vim-transpose'
 NeoBundle 'rust-lang/rust.vim'
 
