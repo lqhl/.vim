@@ -46,7 +46,7 @@ NeoBundle 'tpope/vim-commentary'
 NeoBundle 'vim-scripts/bufexplorer.zip'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'vim-scripts/YankRing.vim'
-" remember to add `export TERM="xterm-256color"` in .zshrc or .bashrc
+" add `export TERM="xterm-256color"` in `.zshrc` or `.bashrc`
 NeoBundle 'bling/vim-airline'
 NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'derekwyatt/vim-scala'
@@ -54,11 +54,10 @@ NeoBundle 'godlygeek/tabular'
 NeoBundle 'gabrielelana/vim-markdown'
 NeoBundle 'salsifis/vim-transpose'
 NeoBundle 'rust-lang/rust.vim'
+NeoBundle 'vimwiki/vimwiki.git'
 
 " color schemes
-NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'morhetz/gruvbox'
-NeoBundle 'romainl/flattened'
 
 call neobundle#end()
 
