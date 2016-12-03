@@ -73,3 +73,8 @@ colorscheme gruvbox
 " => Markdown
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 au BufNewFile,BufRead jrnl*.txt,*.md,*.txt,*.asciidoc,README,TODO,CHANGELOG,NOTES,ABOUT set filetype=markdown
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => VimWiki
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+au FileType vimwiki setl sw=2 sts=2 et
