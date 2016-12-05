@@ -72,7 +72,7 @@ colorscheme gruvbox
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Markdown
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-au BufNewFile,BufRead jrnl*.txt,*.md,*.txt,*.asciidoc,README,TODO,CHANGELOG,NOTES,ABOUT set filetype=markdown
+au BufNewFile,BufRead jrnl*.txt,*.md,*.asciidoc,README,TODO,CHANGELOG,NOTES,ABOUT set filetype=markdown
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VimWiki

@@ -72,5 +72,5 @@ if has('unix')
 endif
 
 " vimwiki
-let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki/moqi/', 'path_html': '~/Dropbox/vimwiki/moqi_html/'},
-            \ {'path': '~/Dropbox/vimwiki/research/', 'path_html': '~/Dropbox/vimwiki/research/'}]
+let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki/work/', 'path_html': '~/Dropbox/vimwiki/work_html/'},
+            \ {'path': '~/Dropbox/vimwiki/personal/', 'path_html': '~/Dropbox/vimwiki/personal_html/'}]
