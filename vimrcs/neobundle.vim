@@ -57,6 +57,7 @@ NeoBundle 'rust-lang/rust.vim'
 NeoBundle 'vimwiki/vimwiki.git'
 
 " color schemes
+NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'morhetz/gruvbox'
 
 call neobundle#end()
