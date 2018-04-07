@@ -74,3 +74,4 @@ endif
 " vimwiki
 let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki/work/', 'path_html': '~/Dropbox/vimwiki/work_html/'},
             \ {'path': '~/Dropbox/vimwiki/personal/', 'path_html': '~/Dropbox/vimwiki/personal_html/'}]
+nnoremap <Leader>z :VimwikiToggleListItem<CR>
