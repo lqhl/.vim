@@ -160,6 +160,9 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 
+" 1 tab == 2 spaces for yaml and json
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
 
 """"""""""""""""""""""""""""""
 " => Visual mode related
