@@ -48,7 +48,6 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'vim-scripts/YankRing.vim'
 " add `export TERM="xterm-256color"` in `.zshrc` or `.bashrc`
 NeoBundle 'bling/vim-airline'
-NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'gabrielelana/vim-markdown'
