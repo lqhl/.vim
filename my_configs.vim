@@ -14,9 +14,6 @@ vnoremap > >gv
 " Make Y behave like other capitals
 map Y y$
 
-" Clear search highlights
-noremap <silent><Leader>/ :nohls<CR>
-
 " Mappings to access buffers (don't use ",p" because a
 " delay before pressing "p" would accidentally paste).
 " ,l       : list buffers
@@ -37,20 +34,6 @@ nnoremap <Leader>8 :8b<CR>
 nnoremap <Leader>9 :9b<CR>
 nnoremap <Leader>0 :10b<CR>
 
-" toggle colorcolumn
-function! g:ToggleColorColumn()
-    if &colorcolumn != ''
-        setlocal colorcolumn&
-    else
-        setlocal colorcolumn=+1
-    endif
-endfunction
-nnoremap <silent> <leader>h :call g:ToggleColorColumn()<CR>
-highlight ColorColumn ctermbg=blue guibg=blue
-
-" set C/C++ indent options
-set cino=g0,t0
-
 " highlight current line
 set cursorline
 
@@ -59,19 +42,3 @@ let g:tex_flavor='latex'
 
 " break Chinese words
 set formatoptions+=mM
-
-" add clang-format support
-if has('unix')
-  if has('mac')       " osx
-    map <leader>k :pyf /usr/local/Cellar/clang-format/2016-06-27/share/clang/clang-format.py<cr>
-    imap <C-K> <c-o>:pyf /usr/local/Cellar/clang-format/2016-06-27/share/clang/clang-format.py<cr>
-  else                " linux, bsd, etc
-    map <leader>k :pyf /usr/share/vim/addons/syntax/clang-format-3.8.py<cr>
-    imap <C-K> <c-o>:pyf /usr/share/vim/addons/syntax/clang-format-3.8.py<cr>
-  endif
-endif
-
-" vimwiki
-let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki/work/', 'path_html': '~/Dropbox/vimwiki/work_html/'},
-            \ {'path': '~/Dropbox/vimwiki/personal/', 'path_html': '~/Dropbox/vimwiki/personal_html/'}]
-nnoremap <Leader>z :VimwikiToggleListItem<CR>
