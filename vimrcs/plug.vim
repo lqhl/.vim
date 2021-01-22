@@ -22,12 +22,18 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'machakann/vim-highlightedyank'
 Plug 'vim-scripts/YankRing.vim'
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
-if has('nvim')
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-    Plug 'Shougo/deoplete.nvim'
-    Plug 'roxma/nvim-yarp'
-    Plug 'roxma/vim-hug-neovim-rpc'
+if has("python3")
+    if has('nvim')
+        Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+        let g:deoplete#enable_at_startup = 1
+    else
+        if v:version >= 800
+            Plug 'Shougo/deoplete.nvim'
+            Plug 'roxma/nvim-yarp'
+            Plug 'roxma/vim-hug-neovim-rpc'
+            let g:deoplete#enable_at_startup = 1
+        endif
+    endif
 endif
 Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'
@@ -67,11 +73,6 @@ map <leader>nf :NERDTreeFind<cr>
 
 " plugin: vim-scripts/YankRing.vim
 let g:yankring_history_dir = '~/.vim/temp_dirs/'
-
-" plugin: Shougo/deoplete.nvim
-if has("python3")
-    let g:deoplete#enable_at_startup = 1
-endif
 
 " plugin: vim-codefmt
 Glaive codefmt plugin[mappings]
