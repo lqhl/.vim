@@ -69,7 +69,9 @@ map <leader>nf :NERDTreeFind<cr>
 let g:yankring_history_dir = '~/.vim/temp_dirs/'
 
 " plugin: Shougo/deoplete.nvim
-let g:deoplete#enable_at_startup = 1
+if has("python3")
+    let g:deoplete#enable_at_startup = 1
+endif
 
 " plugin: vim-codefmt
 Glaive codefmt plugin[mappings]

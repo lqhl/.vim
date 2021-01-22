@@ -42,3 +42,11 @@ let g:tex_flavor='latex'
 
 " break Chinese words
 set formatoptions+=mM
+
+set mouse=a
+
+if has("nvim")
+    set clipboard=unnamedplus
+else
+    set clipboard=unnamed
+endif
