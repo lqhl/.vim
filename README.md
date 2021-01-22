@@ -8,7 +8,20 @@ Run in the terminal
 
 ```bash
 git clone https://github.com/lqhl/.vim $HOME/.vim
+# install vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 $HOME/.vim/install.sh
+```
+
+Install plugins in vim with **vim-plug**:
+```
+:PlugInstall
+```
+
+If you upgrade this config from v2, you need to clean and reinstall some plugins:
+```
+:PlugClean
+:PlugInstall
 ```
 
 
