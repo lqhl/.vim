@@ -34,4 +34,4 @@ History
 This is **v3** of my vim configuration:
 
 - [v1](https://github.com/lqhl/vimrc) was a fork of [The Ultimate vimrc](https://github.com/amix/vimrc)
-- [v2](https://github.com/lqhl/.vim/tree/v2) was based on [neobundle](https://github.com/Shougo/neobundle.vim)
+- [v2](https://github.com/lqhl/.vim/tree/v2) manages plugins with [neobundle](https://github.com/Shougo/neobundle.vim)
