@@ -40,6 +40,7 @@ Plug 'google/vim-codefmt'
 Plug 'google/vim-glaive'
 Plug 'ciaranm/detectindent'
 Plug 'jlanzarotta/bufexplorer'
+Plug 'mileszs/ack.vim'
 
 call plug#end()
 call glaive#Install()
@@ -108,3 +109,7 @@ let g:detectindent_preferred_indent = 4
 let g:bufExplorerShowRelativePath=1
 let g:bufExplorerFindActive=1
 map <leader>o :BufExplorer<cr>
+
+" plugin: ack.vim
+let g:ackprg = 'ag --vimgrep --smart-case'
+cnoreabbrev ag Ack

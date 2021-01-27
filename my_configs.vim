@@ -30,3 +30,6 @@ if has("nvim")
 else
     set clipboard=unnamed
 endif
+
+nnoremap <Leader>l :Ack <cword><CR>
+noremap <Leader>z :Ack 
