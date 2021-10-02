@@ -53,7 +53,7 @@ let g:ctrlp_map = '<c-f>'
 let g:ctrlp_cmd = 'CtrlP'
 map <leader>j :CtrlPBuffer<cr>
 map <leader>r :CtrlPMRUFiles<cr>
-let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_working_path_mode = 'wa'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
 
