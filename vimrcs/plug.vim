@@ -41,7 +41,11 @@ Plug 'google/vim-glaive'
 Plug 'ciaranm/detectindent'
 Plug 'jlanzarotta/bufexplorer'
 Plug 'mileszs/ack.vim'
-Plug 'wakatime/vim-wakatime'
+if has('unix')
+    if has('mac')
+        Plug 'wakatime/vim-wakatime'
+    endif
+endif
 
 call plug#end()
 call glaive#Install()
