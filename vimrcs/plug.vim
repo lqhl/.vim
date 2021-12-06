@@ -13,7 +13,8 @@ call plug#begin('~/.vim/bundle')
 
 Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-fugitive'
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install()  }  }
 Plug 'tpope/vim-commentary'
 Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
@@ -52,22 +53,6 @@ call glaive#Install()
 
 " plugin: morhetz/gruvbox
 colorscheme gruvbox
-
-" plugin: ctrlpvim/ctrlp.vim
-let g:ctrlp_map = '<c-f>'
-let g:ctrlp_cmd = 'CtrlP'
-map <leader>j :CtrlPBuffer<cr>
-map <leader>r :CtrlPMRUFiles<cr>
-let g:ctrlp_working_path_mode = 'wa'
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
-set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
-
-let g:ctrlp_custom_ignore = {
-            \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-            \ 'file': '\v\.(exe|so|dll)$',
-            \ 'link': 'some_bad_symbolic_links',
-            \ }
-let g:ctrlp_user_command = 'find %s -type f'        " MacOSX/Linux
 
 " plugin: scrooloose/nerdtree
 map <leader>nn :NERDTreeToggle<cr>
@@ -115,3 +100,14 @@ map <leader>o :BufExplorer<cr>
 " plugin: ack.vim
 let g:ackprg = 'ag --vimgrep --smart-case'
 cnoreabbrev ag Ack
+
+nnoremap <Leader>l :Ack <cword><CR>
+vnoremap <Leader>l y:Ack <C-r>=fnameescape(@")<CR><CR>
+noremap <Leader>z :Ack 
+
+" plugin junegunn/fzf.vim
+map <C-f> :Files<cr>
+nnoremap <Leader>f :Ag <C-r><C-w><CR>
+vnoremap <Leader>f y:Ag <C-r>=fnameescape(@")<CR><CR>
+map <leader>g :Ag<cr>
+map <leader>t :Tags<cr>

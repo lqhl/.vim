@@ -30,7 +30,3 @@ if has("nvim")
 else
     set clipboard=unnamed
 endif
-
-nnoremap <Leader>l :Ack <cword><CR>
-vnoremap <Leader>l y:Ack <C-r>=fnameescape(@")<CR><CR>
-noremap <Leader>z :Ack 
