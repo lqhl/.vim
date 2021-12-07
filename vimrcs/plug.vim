@@ -98,3 +98,5 @@ nnoremap <Leader>f :Ag <C-r><C-w><CR>
 vnoremap <Leader>f y:Ag <C-r>=fnameescape(@")<CR><CR>
 map <leader>g :Ag<cr>
 map <leader>t :Tags<cr>
+map <leader>c :BTags<cr>
+map <leader>b :BLines<cr>
