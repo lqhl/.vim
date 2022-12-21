@@ -48,6 +48,10 @@ if has('unix')
 endif
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries'  }
 
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+Plug 'prabirshrestha/asyncomplete.vim'
+
 call plug#end()
 call glaive#Install()
 
