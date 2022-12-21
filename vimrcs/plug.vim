@@ -104,3 +104,10 @@ map <leader>g :Ag<cr>
 map <leader>t :Tags<cr>
 map <leader>c :BTags<cr>
 map <leader>b :BLines<cr>
+
+" For LSP
+let g:lsp_diagnostics_enabled = 0
+map <leader>gd :LspDefinition<cr>
+map <leader>gi :LspImplementation<cr>
+map <leader>gh :LspHover<cr>
+map <leader>gr :LspReferences<cr>
