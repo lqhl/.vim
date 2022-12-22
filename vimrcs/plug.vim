@@ -52,6 +52,8 @@ Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/asyncomplete.vim'
 
+Plug 'ojroques/vim-oscyank', {'branch': 'main'}
+
 call plug#end()
 call glaive#Install()
 
@@ -111,3 +113,6 @@ map <leader>gd :LspDefinition<cr>
 map <leader>gi :LspImplementation<cr>
 map <leader>gh :LspHover<cr>
 map <leader>gr :LspReferences<cr>
+
+" Copy text through SSH with OSC52 after any yank operation
+autocmd TextYankPost * if v:event.operator is 'y' && v:event.regname is '' | execute 'OSCYankReg "' | endif
